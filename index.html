@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="./CSS/styles.css" />
+</head>
+<body>
+
+    <div class="main_contener">
+        <hedder class="header">
+            <div class="header__logo">
+                <a href="#" class="header__link__back hidden"><i class="fa-solid fa-arrow-left"></i></a>
+                <img src="./images/logo/ohmyfood@2x.svg" alt="Logo">
+            </div>
+            <div class="header__location">
+                <i class="fa-solid fa-location-dot"></i><span>Paris, Belleville</span>
+            </div>
+        </hedder>
+
+        <main class="main">
+            <section class="present">
+                <header class="present__header">
+                    <H1 class="present__titre1">Réservez le menu qui vous convient</H1>
+                    <p class="present__texte">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+                    <a href="#restaurants" class="button">Explorer nos restaurants</a>
+                </header>
+                <div class="usage">
+                    <h1 class="present__titre2">Fonctionnement</h1>
+                    <div class="usage__step" value="1">
+                        <i class="fa-solid fa-mobile-screen fa-color-grey"></i>
+                        <span>Choisissez un restaurant</span>
+                    </div>
+                    <div class="usage__step" value="2">
+                        <i class="fa-solid fa-list-ul fa-color-grey"></i>
+                        <span>Composez votre menu</span>
+                    </div>
+                    <div class="usage__step" value="3">
+                        <i class="fa-solid fa-store fa-color-red"></i>
+                        <span>Dégustez au restaurant</span>
+                    </div>
+                </div>
+            </section>
+            <section class="articles" id="restaurants">
+                <h1 class="articles__titre1">Restaurants</h1>
+                <a href="./menu1.html">
+                    <article class="article">
+                        <div class="badge badge__new">Nouveau</div>
+                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat" class="article__img">
+                        <div class="article__contenu">
+                            <div>
+                                <h3 class="article__titre2">La palette du goût</h3>
+                                <p class="article__texte">Menilmontant</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart reco__reg"></i>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="article">
+                        <div class="badge">Nouveau</div>
+                        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat" class="article__img">
+                        <div class="article__contenu">
+                            <div>
+                                <h3 class="article__titre2">Le délice des sens</h3>
+                                <p class="article__texte">Menilmontant</p>
+                            </div>
+                            <div><i class="fa-regular fa-heart"></i></div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="article">
+                        <div class="badge badge__new">Nouveau</div>
+                        <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plat" class="article__img">
+                        <div class="article__contenu">
+                            <div>
+                                <h3 class="article__titre2">La note enchantée</h3>
+                                <p class="article__texte">Menilmontant</p>
+                            </div>
+                            <div><i class="fa-regular fa-heart"></i></div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="article">
+                        <div class="badge">Nouveau</div>
+                        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat" class="article__img">
+                        <div class="article__contenu">
+                            <div>
+                                <h3 class="article__titre2">À la française</h3>
+                                <p class="article__texte">Menilmontant</p>
+                            </div>
+                            <div><i class="fa-regular fa-heart"></i></div>
+                        </div>
+                    </article>
+                </a>
+        </main>   
+        <footer class="footer">
+            <img src="./images/logo/ohmyfood.svg" alt="logo" class="footer__logo">
+            <nav class="footer__nav"> 
+                <a href="#" class="footer__lnk"><i class="fa-solid fa-utensils fa-color-blc"></i>Proposer un restaurant</a>
+                <a href="#" class="footer__lnk"><i class="fa-solid fa-handshake-angle fa-color-blc"></i>Devenir partenaire</a>
+                <a href="#" class="footer__lnk">Mentions légales</a>
+                <a href="mailto:contact@ohmyfood.com?subject:Contact" class="footer__lnk">Contact</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

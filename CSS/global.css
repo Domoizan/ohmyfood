@@ -1,0 +1,65 @@
+:root {
+  color: black;
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-regular {
+  color: #9356DC;
+  font-weight: 400;
+  transition: font-weight 400ms;
+}
+.fa-regular:hover {
+  font-weight: 900;
+}
+
+.fa-color-blc {
+  color: white;
+}
+
+.fa-color-red {
+  color: #9356DC;
+}
+
+.fa-color-grey {
+  color: #7E7E7E;
+}
+
+.main_contener {
+  display: flex;
+  flex-direction: column;
+  background: #F6F6F6;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.button {
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 0.8em 1em;
+  font-weight: 500;
+}
+.button:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=global.css.map */

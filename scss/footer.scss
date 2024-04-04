@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.4rem 1rem;
+    gap:0.8rem;
+    background-color: $bg_footer;
+
+
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+    }
+
+    &__lnk{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        color: white;
+        
+        & i::before{
+            display: inline-block;
+            width: 0.8rem;
+        }
+    }
+
+    &__logo{
+        display: block;
+    }
+}
