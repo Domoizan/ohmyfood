@@ -148,7 +148,7 @@
     &__check{
         position: relative; 
         width: 100%;
-        padding: 0 .5rem .5rem;
+        padding: 0 0.5rem 0.5 rem;
         white-space: nowrap;
         overflow: hidden;
     }
@@ -198,7 +198,7 @@
         color: white;
         text-align: center;
         border-radius: 0 1rem 1rem 0;
-        padding: 1.5rem 0;
+        padding: 1.4rem 0;
     }
 
     &__check input:hover + label i{
