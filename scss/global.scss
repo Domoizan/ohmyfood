@@ -5,7 +5,7 @@ $color_ter: #99E2D0;
 $bg_footer: #353535;
 $color-icon-grey: #7E7E7E;
 $bg_main_contener: #F6F6F6;
-;
+
 
 :root{
     color:black;
@@ -29,14 +29,32 @@ a{
     text-decoration: none;
 }
 
-.fa-regular{
-    color: $color_prm;
-    font-weight: 400;
-    transition: font-weight 400ms;
-    &:hover{
-        font-weight: 900;
+
+
+.like{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background-repeat: no-repeat;
+
+    &__no{
+        background-image: url(../images/Like_no.png);
+        &:hover{
+            background-image: url(../images/Like_ok.png);
+        }
     }
+
+    &__ok{
+        background-image: url(../images/Like_ok.png);
+        &:hover{
+            background-image: url(../images/Like_no.png);
+        }
+    }
+
 }
+
+
 
 .fa-color-blc{
     color: white;
@@ -57,23 +75,46 @@ a{
     margin: 0;
 }
 
+@keyframes contener{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.index{
+    animation : contener 1000ms 3250ms both;
+}
 
 .main_contener{
     display: flex;
     flex-direction: column;
-    background: $bg_main_contener;
-    max-width: 1440px;
+    justify-content: space-between;
+    background-color: $bg_main_contener;
+    max-width: 1024px;
     margin: auto;
+    
 }
 
+
+.main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
 .button{
     border-radius: 25px;
     background: linear-gradient(193deg, $color_prm, #FF79DA);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    //width: 13rem;
+    align-self: center;
+    text-align: center;
     color: white;
     //height: 3.125rem;
-    padding: 0.8em 1em;
+    padding: 0.8em 1.5em;
     font-weight: 500;
     &:hover{
         color: white;

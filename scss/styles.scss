@@ -3,10 +3,13 @@
 @import "./minireset.scss"; 
 @import "./global.scss";
 /* styles section header */
+@import "./loader.scss";
 @import "./header.scss";
 /* styles section presentation */
 @import "./present.scss";
 /* styles section main */
 @import "./main.scss";
+@import "./menu.scss";
 /* styles section footer */
 @import "./footer.scss";
+@import "./media.scss";

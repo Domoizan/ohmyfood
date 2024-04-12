@@ -28,6 +28,10 @@
     width: 100%;
     padding: 0 0 1rem 0;
 
+    &__link{
+        width: 100%;
+    }
+
     &__contenu{
         display: flex;
         flex-direction: row;
@@ -42,6 +46,10 @@
         display: flex;
         flex-direction: column;
         justify-content:center;
+    }
+
+    &__a{
+        width: 100%;
     }
 
     &__titre1{
@@ -78,7 +86,7 @@
     padding-top: 0.5rem;
     font-weight: 700;
     border-radius: 2px;
-    background: var(--Green, $color_ter);
+    background: $color_ter;
     text-align: center;
     &__new{
         display: block;

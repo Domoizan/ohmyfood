@@ -1,10 +1,9 @@
-/* Error: The target selector was not found.
- * Use "@extend %titre !optional" to avoid this error.
+/* Error: Undefined variable.
  *    ,
- * 16 |         @extend %titre;
- *    |         ^^^^^^^^^^^^^^
+ * 66 |             background-color: $color_prm;
+ *    |                               ^^^^^^^^^^
  *    '
- *   scss\present.scss 16:9  root stylesheet */
+ *   scss\present.scss 66:31  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend %titre !optional" to avoid this error.\a    \2577 \a 16 \2502          @extend %titre;\d\a    \2502          ^^^^^^^^^^^^^^\a    \2575 \a   scss\\present.scss 16:9  root stylesheet';
+  content: "Error: Undefined variable.\a    \2577 \a 66 \2502              background-color: $color_prm;\d\a    \2502                                ^^^^^^^^^^\a    \2575 \a   scss\\present.scss 66:31  root stylesheet";
 }
