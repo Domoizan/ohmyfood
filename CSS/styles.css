@@ -492,16 +492,20 @@ a {
   background-color: #99E2D0;
 }
 .menu__titre3 {
-  margin: 0;
+  position: relative;
+  margin-top: -2rem;
+  display: block;
   display: block;
   grid-area: label;
-  width: 100%;
+  width: calc(100% - 3rem);
+  top: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0.5rem 0 0 0.5rem;
+  z-index: 1;
 }
 .menu__plats {
   display: flex;

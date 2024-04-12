@@ -74,17 +74,21 @@
 
     &__titre3{
         @extend %titre;
-        margin: 0;
+        position: relative;
+        margin-top: -2rem;
+        display: block;
+        //margin: 0;
         display: block;
         grid-area: label;
-        width: 100%;
+        width: calc(100% - 3rem);
+        top:2rem;
         font-size: 1.2rem;
         font-weight: 500;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         padding: .5rem 0 0 0.5rem;
-        
+        z-index: 1;
     }
 
     &__plats{
