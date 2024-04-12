@@ -50,6 +50,9 @@
     order: 3;
   }
   /* style pour les pages menu */
+  .menu {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=media.css.map */
