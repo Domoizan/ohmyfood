@@ -31,7 +31,7 @@ $bg_loader: white;
     width: 0.5rem;
     height: 5rem;
     transform: scale(0);
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 50%, #30cfd0 100%);
+    background-image: linear-gradient(to top, $color_ter 0%, $color_prm 50%, $color_ter 100%);
     border-radius: 100%;
 }
 

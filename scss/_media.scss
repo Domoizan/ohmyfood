@@ -7,22 +7,26 @@
     .present__titre1 {
         width: 100%;
     }
-
+    .present__titre2{
+        width: 100%;
+        text-align: center;
+    }
     .usage{
 
         padding: 3rem 10%;
-        
+        align-items: center;
         &__steps{
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
             width: 100%;
         }
-
+    
         &__step{
-            width: 30%;
+            width: 40%;
         }
-
+    
     }
 
     .articles{
@@ -44,17 +48,42 @@
         gap: 3rem;
         padding: 4rem 3rem 3rem 3rem;
 
+        &__nav{
+            display: flex;
+            flex-direction: column;
+
+            width: 100%;
+            justify-content:center;
+            align-items:flex-end;
+        }
+
         &__nav__leg{
+            width: 60%;
             order:2;
             flex-direction: row;
             justify-content: space-between;
             gap:1rem;
+            
         }
+
         &__nav__req{
+            width: 60%;
             order:1;
             flex-direction: row;
             justify-content: space-between;
             gap:1rem;
+        }
+
+        &__lnk{
+            display: inline-block;
+            width:45%;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            & i{
+                padding-right: 0.6rem;
+            }
         }
 
         & img{
@@ -63,10 +92,74 @@
     }
 /* style pour les pages menu */
 
-.menu{
-    width: 80%;
+
+
+    .main{
+        width: 80%;
+        margin:0 auto;
+    }
+
+    .menu{
+
+        &__plats{
+            width: 70%;
+            margin: 0 auto 0 auto;
+        }
+
+        &__header{
+            justify-content: center;
+            gap:3rem;
+        }
+    }
 }
 
+@media (min-width: 1024px){
+
+    .present__titre2{
+        text-align: left;
+    }
+    .usage{
+
+        padding: 3rem 10%;
+        
+        &__steps{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+        }
+    
+        &__step{
+            width: 30%;
+        }
+    
+    }
+
+    .footer{
+
+        &__nav{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            align-items: center;
+            gap:2rem;
+        }
+
+        &__nav__leg{
+            width: auto;
+            justify-content:flex-end;
+        }
+
+        &__nav__req{
+            width: auto;
+            justify-content: flex-end;
+        }
+
+        &__lnk{
+            width: auto;
+        }
+
+    }
 
 }
 
