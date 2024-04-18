@@ -43,7 +43,21 @@
     width: 100%;
     padding: 3rem 1rem 3rem 1rem;
     gap:1.5rem;
-    counter-reset: step_count;
+    
+
+    &__texte{
+        padding-right: 1rem;
+    }
+
+    &__steps{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        counter-reset: step_count;
+        gap: 0.5rem;
+    }
+
     &__step{
         position:relative;
         display: flex;

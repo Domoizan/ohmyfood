@@ -315,7 +315,17 @@ a {
   width: 100%;
   padding: 3rem 1rem 3rem 1rem;
   gap: 1.5rem;
+}
+.usage__texte {
+  padding-right: 1rem;
+}
+.usage__steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   counter-reset: step_count;
+  gap: 0.5rem;
 }
 .usage__step {
   position: relative;
@@ -693,9 +703,13 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 0.5rem;
+  }
+  .usage__texte {
+    padding-right: 1rem;
   }
   .usage__step {
-    width: 40%;
+    width: auto;
   }
   .articles {
     display: flex;
@@ -768,16 +782,13 @@ a {
     text-align: left;
   }
   .usage {
-    padding: 3rem 10%;
+    padding: 3rem 8%;
   }
   .usage__steps {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-  }
-  .usage__step {
-    width: 30%;
   }
   .footer__nav {
     display: flex;

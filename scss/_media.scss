@@ -21,10 +21,15 @@
             justify-content:center;
             align-items: center;
             width: 100%;
+            gap: 0.5rem;
+        }
+
+        &__texte{
+            padding-right: 1rem;
         }
     
         &__step{
-            width: 40%;
+            width: auto;
         }
     
     }
@@ -51,7 +56,6 @@
         &__nav{
             display: flex;
             flex-direction: column;
-
             width: 100%;
             justify-content:center;
             align-items:flex-end;
@@ -120,7 +124,7 @@
     }
     .usage{
 
-        padding: 3rem 10%;
+        padding: 3rem 8%;
         
         &__steps{
             display: flex;
@@ -129,9 +133,7 @@
             width: 100%;
         }
     
-        &__step{
-            width: 30%;
-        }
+
     
     }
 
