@@ -6,6 +6,14 @@ $bg_footer: #353535;
 $color-icon-grey: #7E7E7E;
 $bg_main_contener: #F6F6F6;
 
+@mixin box_shadow($opacity){
+    box-shadow: 0 .25rem 0.9rem 0 rgba(0, 0, 0, $opacity) ;
+}
+
+@mixin badge_shadow {
+    box-shadow: 0 .125rem 0.25rem 0 rgba(0, 0, 0, 0.15) ;
+}
+
 
 :root{
     color:black;
@@ -56,7 +64,7 @@ a{
 
 }
 
-
+/* couleur des icones */
 
 .fa-color-blc{
     color: white;
@@ -110,14 +118,15 @@ a{
 .button{
     border-radius: 25px;
     background: linear-gradient(193deg, $color_prm, $color_scd);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    //width: 13rem;
+    @include box_shadow(0.25);
     align-self: center;
     text-align: center;
     color: white;
     padding: 0.8em 1.5em;
     font-weight: 500;
+    transition: all 250ms;
     &:hover{
         opacity: .80;
+        @include box_shadow(0.5);
     }
 }

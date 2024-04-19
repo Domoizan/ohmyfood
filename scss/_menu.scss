@@ -136,6 +136,7 @@
         margin-top: 0.5rem;
         white-space: nowrap;
         overflow: hidden;
+        @include box_shadow(0.1);
     }
 
     &__grp1{
@@ -175,7 +176,7 @@
     &__check{
         position: relative; 
         width: 100%;
-        padding: 0 0.5rem 0.5 rem;
+        padding: 0 0.5rem 0.5rem;
         white-space: nowrap;
         overflow: hidden;
     }
@@ -227,7 +228,7 @@
         border-radius: 0 1rem 1rem 0;
         padding: 1.4rem 0;
     }
-
+/*
     &__check input:hover + label i{
         display: block;
         opacity: 1;
@@ -238,11 +239,17 @@
         opacity: 0;
         animation: checkout 250ms;
     }
-
+*/
     &__check input:checked + label i{
         display: block;
         opacity: 1;
-        
+        animation: check 250ms;
     }
+
+    &__check input:not(checked) + label i{
+        opacity: 1;
+        animation: checkout 250ms;
+    }
+
 
 }

@@ -87,6 +87,7 @@
     font-weight: 700;
     border-radius: 2px;
     background: $color_ter;
+    @include badge_shadow;
     text-align: center;
     &__new{
         display: block;
