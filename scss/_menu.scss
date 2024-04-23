@@ -38,7 +38,9 @@
     from{
         display: block;
         opacity: 1;
-        transform: scale(1);}
+        transform: scale(1);
+        transform: translateX(0);
+    }
     to{
         opacity: 0;
         transform: scale(0);
@@ -46,7 +48,11 @@
     }
 }
 
-
+.main-menu{
+    width: 80%;
+    margin: 0 auto;
+    background-color: $bg_main_contener;
+}
 
 .menu{
     display: flex;
